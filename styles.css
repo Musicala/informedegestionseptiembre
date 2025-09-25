@@ -1,0 +1,807 @@
+/* Fuente estilizada desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === HEADER === */
+.encabezado {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.logos img {
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+  transform: scale(1.05);
+}
+
+.encabezado h1 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffcc70;
+  margin-top: 0.3rem;
+}
+
+/* === MAIN CONTENT === */
+main {
+  padding: 3rem 1rem;
+}
+
+.intro {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1400px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.intro:hover {
+  transform: translateY(-5px);
+}
+
+.intro h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #222;
+}
+
+.intro p {
+  margin-bottom: 1.2rem;
+}
+
+.intro ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.intro li {
+  margin-bottom: 0.5rem;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #ddd;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 3rem;
+}
+
+.informe {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-informe {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.header-informe img {
+  height: 80px;
+}
+
+.titulo-institucional h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #111;
+}
+
+.titulo-institucional p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.titulo-informe {
+  text-align: center;
+  font-size: 1rem;
+  margin: 2rem 0 1.5rem;
+  color: #222;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 0.5rem 0;
+}
+
+.datos-resumen {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.tabla-informe > div {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.objetivo {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f1f1f1;
+  border-left: 4px solid #444;
+  border-radius: 8px;
+}
+
+.objetivo p {
+  margin-top: 0.5rem;
+}
+
+.seguimiento {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.participacion ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.participacion li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.tabla-seguimiento {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.tabla-seguimiento th,
+.tabla-seguimiento td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabla-seguimiento th {
+  background-color: #e9e9e9;
+  color: #222;
+}
+
+.tabla-seguimiento td {
+  background-color: #fdfdfd;
+}
+
+.evaluacion {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.evaluacion h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #222;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.tabla-evaluacion .fila {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.tabla-evaluacion .etiqueta {
+  width: 30%;
+  background-color: #e6e6e6;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-right: 1px solid #ccc;
+}
+
+.tabla-evaluacion .contenido {
+  width: 70%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+}
+
+.cierre-informe {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cierre-informe h3 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+.recomendaciones p,
+.comentarios-finales p {
+  font-size: 1.2rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #444;
+}
+
+.tabla-aprobacion {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.tabla-aprobacion th,
+.tabla-aprobacion td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.tabla-aprobacion th {
+  background-color: #e6e6e6;
+  width: 30%;
+  text-align: center;
+}
+
+.firmas-finales {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tabla-firmas {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.tabla-firmas .columna {
+  flex: 1;
+  background-color: #fdfdfd;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.botonera {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+.botonera button {
+  background-color: #444;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botonera button:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+}
+
+.seccion-oculta {
+  display: none;
+}
+
+.tablero-control {
+  background-color: #ffffff;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tablero-control h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #222;
+}
+
+.tablero-control table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.tablero-control th,
+.tablero-control td {
+  border: 1px solid #ccc;
+  padding: 0.9rem;
+  text-align: left;
+}
+
+.tablero-control thead {
+  background-color: #eaeaea;
+}
+
+.looker {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.looker h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+
+#informe,
+#tablero {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#informe.mostrar,
+#tablero.mostrar {
+  opacity: 1;
+  display: block;
+}
+
+.firmas-campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.firmas-campos div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.firmas-campos input[type="text"],
+.firmas-campos input[type="date"] {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+}
+
+.firma-campo {
+  height: 60px;
+  border: 1px dashed #999;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+@media print {
+  .botonera, button, .no-print {
+    display: none !important;
+  }
+
+  input[type="text"],
+  input[type="date"] {
+    border: none;
+    background: transparent;
+  }
+
+  input[type="radio"],
+  label {
+    font-size: 1rem;
+  }
+}
+
+.aprobacion-editable textarea {
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+textarea:focus {
+  outline: 2px solid #555;
+}
+
+.firma-previa {
+  height: 100px;
+  border: 1px dashed #999;
+  border-radius: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 0.5rem;
+}
+
+@media print {
+  input,
+  button,
+  .no-print,
+  input[type="file"],
+  textarea {
+    display: none !important;
+  }
+}
+
+.firmas-campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Aseguramos que los inputs de sólo lectura se vean como texto */
+.columna-firma input[readonly] {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  color: #333;
+}
+
+.columna-firma input[type="text"],
+.columna-firma input[type="date"],
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.4rem 0 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Campos siempre rellenados y sin bordes */
+.columna-firma input[readonly] {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  color: #333;
+}
+
+@media print {
+  input,
+  button,
+  .no-print,
+  textarea {
+    border: none;
+    background: transparent;
+  }
+}
+
+.tabla-autorizacion input[type="text"],
+.tabla-autorizacion input[type="date"] {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  width: calc(100% - 130px);
+  max-width: 300px;
+}
+
+@media print {
+  .tabla-autorizacion input[type="text"],
+  .tabla-autorizacion input[type="date"] {
+    border: none;
+    background: transparent;
+    width: auto;
+  }
+}
+
+.control-cambios input[type="text"],
+.control-cambios input[type="date"],
+.control-cambios textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.control-cambios textarea {
+  min-height: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media print {
+  input,
+  textarea,
+  .no-print,
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.badge {
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.badge-verde {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.badge-rojo {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.boton-lookerstudio {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem auto;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.boton-lookerstudio:hover {
+  background-color: #0c57c3;
+}
+
+.btn-evidencias {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+.btn-evidencias:hover {
+  background-color: #222;
+}
+
+/* Contenedor de los botones */
+.evidencias-cell .btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: start;
+}
+
+/* Botón estilizado */
+.btn-evidencias {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #1a73e8;        /* Azul Google */
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;          /* 6px */
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Icono ligeramente más grande */
+.btn-evidencias .icon {
+  font-size: 1.2rem;
+}
+
+/* Hover y foco */
+.btn-evidencias:hover,
+.btn-evidencias:focus {
+  background-color: #1558b0;        /* Azul más oscuro */
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* En pantallas muy pequeñas, apilar los botones */
+@media (max-width: 480px) {
+  .evidencias-cell .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-evidencias {
+    justify-content: center;
+  }
+}
+
+  .recomendaciones {
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  .recomendaciones h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+  }
+  .recomendaciones ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
+  .recomendaciones li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    color: #444444;
+  }
+  .recomendaciones li strong {
+    color: #1a1a1a;
+  }
+
+  .tabla-evaluacion .contenido {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+
+  /* 👇 Este es el que corrige los puntos */
+  list-style-position: inside;
+}
+
+.tabla-evaluacion .contenido ul {
+  margin-left: 1rem;
+}
+
+.columna-firma input[readonly] {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  color: #333;
+}
+
+.columna-firma {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.columna-firma label {
+  margin-bottom: 0.3rem; /* añade un pequeño espacio entre "Firma:" y la línea */
+}
+
+/* ===== Bloque de firmas estilo formato oficial ===== */
+.firmas-plantilla{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  margin-top:1rem;
+  border:1px solid #000;               /* marco exterior */
+  background:#fff;
+}
+
+.firma-box{
+  display:grid;
+  grid-template-rows:auto 110px auto;  /* alto del área en blanco para firmar */
+  min-height:160px;
+  border-left:1px solid #000;          /* línea central vertical */
+}
+.firma-box:first-child{ border-left:none; }
+
+.firma-titulo{
+  font-size:12px;
+  padding:6px 8px;
+  color:#000;
+}
+
+.firma-footer{
+  border-top:1px solid #000;
+  padding:8px;
+  font-size:12px;
+  line-height:1.35;
+  color:#000;
+}
+
+.firma-footer .fila{ margin-top:2px; }
+.lbl{ font-weight:700; }
+
+/* inputs embebidos en la franja inferior (solo derecha) */
+.fila-edit{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.inline-input{
+  flex:1 1 auto;
+  border:none;
+  outline:none;
+  border-bottom:1px solid #000; /* luce como línea para escribir */
+  font: inherit;
+  padding:0 4px 2px 4px;
+  min-width:160px;
+  color:#000;
+  background:transparent;
+}
+.inline-input::placeholder{ color:#777; }
+.inline-input.fecha{ max-width:140px; }
+
+/* imprimir igualito */
+@media print{
+  .firmas-plantilla,
+  .firma-box,
+  .firma-footer{ border-color:#000 !important; }
+  .inline-input{
+    border-bottom-color:#000 !important;
+  }
+}
